@@ -1,10 +1,10 @@
 
 import React from 'react'
 
-export default function page() {
+export default function about() {
   return (
     <div>
-      <h1>dashboard page</h1>
+      <h1>about</h1>
     </div>
   )
 }

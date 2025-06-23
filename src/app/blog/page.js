@@ -1,10 +1,10 @@
 
 import React from 'react'
 
-export default function hello() {
+export default function blog() {
   return (
     <div>
-      <h1>hello world</h1>
+      <h1>blog</h1>
     </div>
   )
 }
