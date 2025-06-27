@@ -2,7 +2,9 @@
 import React from 'react'
 
 export const metadata = {
-  title:  'login'   
+  title:  {
+    absolute : 'login'
+  }   
 };
 
 
