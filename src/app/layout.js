@@ -23,6 +23,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <Menubar />
+          <section className={"text-center"}>
+            hello world
+          </section>
         {children}
       </body>
     </html>
