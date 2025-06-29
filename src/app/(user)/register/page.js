@@ -1,10 +1,26 @@
 
-import React from 'react'
+import React, { Suspense } from 'react'
 
-export default function login() {
+
+
+async function Form (){
+    const promise = new Promise ((resolve)=> setTimeout ( resolve , 4000)) ;
+    await promise ;
+
+  return (
+      <h1>wqionfjkoqwenfjwe</h1>
+  );
+}
+
+export default function register() {
+
+
   return (
     <div>
-      <h1>register </h1>
+      <Suspense fallback={<div>...loading</div>}>
+      <h1>Form  </h1>
+      <Form />
+      </Suspense>
     </div>
   )
 }
