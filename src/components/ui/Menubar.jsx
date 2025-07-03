@@ -7,7 +7,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
 export default function Menubar() {
@@ -15,18 +15,14 @@ export default function Menubar() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/login" passHref legacyBehavior>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Login
-            </NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/login">Login</Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/register" passHref legacyBehavior>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Register
-            </NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/register">Register</Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
